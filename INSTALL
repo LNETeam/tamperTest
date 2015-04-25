@@ -1,5 +1,6 @@
 install = 
 {
+  Dependencies = {},
   PreAction = function() 
     local file = fs.open("tamperTest","w")
     file.write("DerpHerp")
