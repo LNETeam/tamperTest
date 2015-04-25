@@ -1,0 +1,12 @@
+install = 
+{
+  PreAction = function() 
+    local file = fs.open("tamperTest","w")
+    file.write("DerpHerp")
+    file.close()
+    return true
+  end,
+  InstallHierarchy = {},
+  
+}
+return install
