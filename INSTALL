@@ -7,7 +7,11 @@ install =
     file.close()
     return true
   end,
-  InstallHierarchy = {},
+  InstallHierarchy = {{"null.lua","null"}},
+  PostAction = function()
+    fs.delete("null")
+    return true
+  end
   
 }
 return install
