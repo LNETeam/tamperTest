@@ -14,7 +14,6 @@ install =
   PostAction = function()
     fs.delete("null")
     return true
-  end
-  
+  end,
 }
 return install
