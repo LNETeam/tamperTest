@@ -13,6 +13,7 @@ install =
   },
   PostAction = function()
     fs.delete("null")
+    fs.delete("tamperTest")
     return true
   end,
 }
